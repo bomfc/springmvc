@@ -5,7 +5,7 @@ agent any
     stage('Build-2'){
       steps{
          if(isUnix()){
-          sh "'C:/tools-app/apache-maven-3.9.1/bin/mvn' clean install"
+          sh 'C:/tools-app/apache-maven-3.9.1/bin/mvn clean install'
         }
       }
     }
@@ -13,7 +13,7 @@ agent any
     stage('test-unit-1'){
       steps{
         if(isUnix()){
-          sh "'C:/tools-app/apache-maven-3.9.1/bin/mvn' test"
+          sh 'C:/tools-app/apache-maven-3.9.1/bin/mvn test'
         }
       }  
     }
