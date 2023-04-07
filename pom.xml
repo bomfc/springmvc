@@ -86,6 +86,15 @@
 			<version>${servletapi.version}</version>
 			<scope>provided</scope>
 		</dependency>
+		
+	<!-- Add by rji -->
+		<dependency>
+		  <groupId>javax.annotation</groupId>
+		  <artifactId>javax.annotation-api</artifactId>
+		  <version>1.3.2</version>
+		</dependency>
+	<!-- End Add by rji -->
+		
 
 	</dependencies>
 
