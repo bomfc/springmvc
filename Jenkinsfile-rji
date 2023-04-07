@@ -1,0 +1,22 @@
+pipeline{
+agent any
+  stages{
+    
+    stage('Build-2'){
+      steps{
+         if(isUnix()){
+          sh "'C:/tools-app/apache-maven-3.9.1/bin/mvn' clean install"
+        }
+      }
+    }
+    
+    stage('test-unit-1'){
+      steps{
+        if(isUnix()){
+          sh "'C:/tools-app/apache-maven-3.9.1/bin/mvn' test"
+        }
+      }  
+    }
+  
+  }
+}
